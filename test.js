@@ -13,6 +13,8 @@ const fetchRecipe = async (query) => {
     // Clear the recipe container before displaying new recipes
     recipeContainer.innerHTML = ""; 
 
+
+    
     // Check if there are meals in the response
     if (response.meals) {
       response.meals.forEach(meal => {

@@ -6,6 +6,7 @@ const recipeContainer = document.querySelector(".recipe-container");
 const fetchRecipe = async (query) => {
   recipeContainer.innerHTML = "<h1>Fetching Recipes...</h1>"; 
 
+  
   try {
     const data = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`);
     const response = await data.json();
